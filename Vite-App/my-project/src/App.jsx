@@ -46,7 +46,10 @@ function App() {
   const { hours, minutes, seconds } = formatTime(time);
 
   return (
-    <div className="min-h-screen bg-zinc-950 flex flex-col items-center justify-center p-6 text-zinc-100 selection:bg-zinc-850 selection:text-white">
+    <div 
+      className="min-h-screen flex flex-col items-center justify-center p-6 text-zinc-100 selection:bg-zinc-850 selection:text-white bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/cat-wallpaper.jpg')" }}
+    >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-[40%] -left-[20%] w-[80%] h-[80%] rounded-full bg-zinc-800/10 blur-[128px]" />
         <div className="absolute -bottom-[40%] -right-[20%] w-[80%] h-[80%] rounded-full bg-zinc-900/10 blur-[128px]" />
